@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Faceblock",
+	"version": "1.0.0",
+	"permissions": [
+		"storage",
+		"tabs",
+		"tabCapture",
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"
+	],
+	"options_page": "options.html",
+	"browser_action": {},
+	"background": {
+    "scripts": ["firebase.js", "ocrad.js", "html2canvas.min.js", "jquery.min.js", "background.js"]
+  },
+	"web_accessible_resources": [
+	],
+	"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+}
